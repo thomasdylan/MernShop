@@ -9,9 +9,7 @@ const store = configureStore({
         productDetails: productDetailsReducer,
         cart: cartReducer
     },
-    preloadedState: {
-        cart: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : []
-    },
+    preloadedState: {},
     middleware: [thunk],
 })
 
